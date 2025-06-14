@@ -1,27 +1,56 @@
+body{
+    height: 100%;
+}
 p {
     color: blue;
 }
 /*me*/
 h1 {color: rebeccapurple;}
-.strasbourg{
-    color: black;
+h2 {
+    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
+    margin-bottom: 5%;
+    padding: 1%;
+    background-color: rgb(247, 235, 243); 
+
 }
-.colmar{
-    color: blueviolet;
-}
-.equisheim{
-    color: khaki;
-}
-#logo{/*indiqueprioriter*/}
-.grand-text{
-    font-size: 20px;
+h4{
+    font-family: 'Times New Roman', Times, serif,cursive; text-align: start; color: rebeccapurple;
+
 }
 h2 {font-family: "Dancing Script",cursive}
 h1 {font-family: "Dancing Script",cursive;text-align: center;}
 .conteneur{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
    gap: 10px;
+}
+.button{
+    height: 1rem;
+    width: 8rem;
+    background: rgb(249, 188, 239);
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+.accuiel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    align-content: center;
+    justify-content: center;
+}
+.box1{
+    align-content: center;
+    justify-content: center;
 }
 .bienvenue{
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
@@ -31,12 +60,39 @@ h1 {font-family: "Dancing Script",cursive;text-align: center;}
 }
 main{
     background-color: none;
-    background-image: image();
+}
+.accuiel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: space-between;
+    
 }
 .fin{
     color: black;
     margin-top: 5%;
+    background-color: rgb(247, 235, 243); 
 }
+
+.findepage{
+    color: black;
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .bon{
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
+}
+.mainstory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+.story{
+     text-align: center; color: rgb(14, 2, 26); 
+     align-content: center; align-items: center;
 }
