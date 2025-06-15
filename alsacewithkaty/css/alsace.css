@@ -63,6 +63,7 @@ h4{
     justify-content: center;
     background-color: white;
     padding: 1%;
+    object-fit: cover;
 }
 .box1{
     align-content: center;
