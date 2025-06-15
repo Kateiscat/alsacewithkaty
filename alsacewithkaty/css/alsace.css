@@ -56,8 +56,8 @@ h4{
         transform: scale(1.15);
     }
 .class_button{
-    display:grid;
-    grid-template-row: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-colums: 1fr 1fr 1fr;
     justify-content: space-between;
 }
 }
