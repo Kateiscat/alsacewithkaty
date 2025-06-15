@@ -42,6 +42,11 @@ h4{
    gap: 10px;
 }
 .button{
+    display: flax;
+    flex-direction: row;
+    justify-content: centre; 
+    align-items: center;
+    
     height: 1rem;
     width: 8rem;
     background: rgb(249, 188, 239);
