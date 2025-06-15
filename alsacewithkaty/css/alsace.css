@@ -57,6 +57,7 @@ h4{
     }
 .class_button{
     display: flex;
+    flex-directiom: row;
 
     aling-content: space-between;
 }
