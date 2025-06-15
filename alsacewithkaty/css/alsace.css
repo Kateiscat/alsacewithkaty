@@ -9,7 +9,6 @@ h1 {color: rebeccapurple;
 font-family: "Dancing Script",cursive;text-align: center;
 background-color: white;
    padding-top: 2%;
-    padding-bottom:2%;
    }
 h2 {
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
@@ -44,6 +43,8 @@ h4{
    gap: 10px;
 }
 .button{
+    display: flex;
+    justify-content: center;
     height: 1rem;
     width: 8rem;
     background: rgb(249, 188, 239);
