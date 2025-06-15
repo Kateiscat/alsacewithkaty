@@ -80,6 +80,7 @@ h4{
     background-color: white;
     align-content: center;
     justify-content: center;
+    border-radius: 3rem;
 }
 .bienvenue{
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
