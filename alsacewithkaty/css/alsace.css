@@ -7,7 +7,10 @@ p {
 /*me*/
 h1 {color: rebeccapurple;
 font-family: "Dancing Script",cursive;text-align: center;
-background-color: white;}
+background-color: white;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   }
 h2 {
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
     margin-bottom: 5%;
