@@ -75,6 +75,7 @@ h4{
     object-fit: cover;
 }
 .box1{
+    padding: 3%;
     align-content: center;
     justify-content: center;
     background-color: white;
