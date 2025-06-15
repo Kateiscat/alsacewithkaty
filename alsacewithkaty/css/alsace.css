@@ -38,6 +38,7 @@ h4{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
    gap: 10px;
+    background-color: white;
 }
 .button{
     height: 1rem;
