@@ -38,7 +38,7 @@ h4{
 .conteneur{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-row: 400px auto auto;
+    grid-template-row: auto auto auto;
     justify-content:  space-between;
     justify-items: center;
    gap: 10px;
