@@ -55,6 +55,11 @@ h4{
     &:hover {
         transform: scale(1.15);
     }
+.class_button{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
 }
 .accuiel{
     display: grid;
