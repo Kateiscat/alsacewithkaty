@@ -5,7 +5,9 @@ p {
     color: blue;
 }
 /*me*/
-h1 {color: rebeccapurple;}
+h1 {color: rebeccapurple;
+font-family: "Dancing Script",cursive;text-align: center;
+background-color: white;}
 h2 {
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
     margin-bottom: 5%;
@@ -17,8 +19,20 @@ h4{
     font-family: 'Times New Roman', Times, serif,cursive; text-align: start; color: rebeccapurple;
 
 }
-h2 {font-family: "Dancing Script",cursive}
-h1 {font-family: "Dancing Script",cursive;text-align: center;}
+.alsacepng{
+   animation: swing 2s infinite ease-in-out;
+   transform-origin: center center;
+   display: inline-block;
+}
+@keyframes swing{
+    0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+
+}
+
 .conteneur{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
@@ -87,13 +101,14 @@ main{
 .mainstory {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
-    align-items: center;
     gap: 2%;
     margin-bottom: 2%;
 }
 .story{
-     text-align: center; color: rgb(14, 2, 26); 
+     text-align: center;
      align-content: center; align-items: center;
-    background-color: rgb(247, 235, 243); 
+}
+.storyimg{
+     align-content: center; align-items: center;
+
 }
