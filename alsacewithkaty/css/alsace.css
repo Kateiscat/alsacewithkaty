@@ -55,11 +55,7 @@ h4{
     &:hover {
         transform: scale(1.15);
     }
-.class_button{
-    display: flex;
-    flex-directiom: row;
-    justify-content: space-between;
-}
+
 }
 .accuiel{
     display: grid;
