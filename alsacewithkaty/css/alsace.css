@@ -38,7 +38,8 @@ h4{
 .conteneur{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    justify-content:  space-between;
+    justify-items: center;
    gap: 10px;
 }
 .button{
