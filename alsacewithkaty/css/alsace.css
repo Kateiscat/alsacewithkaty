@@ -44,7 +44,12 @@ h4{
   100% { transform: rotate(0deg); }
 
 }
-
+@media (max-width: 768px) {
+    .mainstory {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
 .conteneur{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
