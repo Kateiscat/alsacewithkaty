@@ -1,6 +1,9 @@
 body{
     height: 100%;
 }
+header{
+    padding-top: 30px;
+}
 p {
     color: blue;
 }
@@ -11,8 +14,6 @@ background-color: white;
    }
 h2 {
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-    margin-bottom: 5%;
-    padding: 1%;
     background-color: rgb(247, 235, 243); 
 
 }
@@ -52,22 +53,29 @@ h4{
     justify-items: center;
    gap: 10px;
 }
-.button{
-    align-self:center ;
-    height: 1rem;
-    width: 8rem;
-    background: rgb(249, 188, 239);
-    color: black;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-    border-radius: 10rem;
-    transition-property: transform;
-    transition-duration: 1000ms;
-    &:hover {
-        transform: scale(1.15);
-    }
+.button {
+  align-self: center;
+  height: 1rem;
+  width: 8rem;
+  background: rgb(249, 188, 239);
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  transition: transform 1s, background-color 0.5s, color 0.5s;
+}
+.button:hover {
+  transform: scale(1.15);
+  background-color: #f080c0; /* Изменённый цвет фона */
+  color: white;}
+a {
+  color: black;
+  text-decoration: none;
+}
 
+a:hover {
+  color: white; /* Цвет при наведении */
 }
 .accuiel{
     display: grid;
@@ -135,4 +143,34 @@ h4{
 .findepage{
 
     background-color: white;
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* светлый полупрозрачный фон */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень */
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* полупрозрачный фон */
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: rebeccapurple; /* красивый красный оттенок */
 }
