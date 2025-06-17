@@ -13,24 +13,56 @@
         Découvrez Alsace avec Katy
        </title>
        <style>
-      html{height: 100%;}
-      body{
-         background-image: url("img/colmar1.jpg");
-         background-size: cover;
-         background-attachment: fixed;
-         background-repeat: no-repeat;
-         background-position: center;}
+       html {
+    height: 100%;
+  }
+
+  body {
+    background-image: url("img/colmar1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    scrollbar-width: auto;
+    scrollbar-color: #888 #f1f1f1;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
    </style>
   </head>
 
    <header>
-     <h1>  Découvrez Alsace avec Katy <img src="./img/alsace.png" class="alsacepng" alt="alsace" height="50" width="50"> </h1>
+     <h1>  Découvrez Alsace avec Katy <img src="./img/alsace.png" class="alsacepng" alt="alsace" height="35" width="35"> </h1>
   </header>
   <!--Треба вставити фон картинку
   також анімацію лелеки 
   разобрать с логотипом -->
 <main>
    <body>
+      <nav class="main-nav">
+  <ul>
+   <li><a href="index.html">Accueil</a></li>
+   <li><a href="strasbourg.html">Visitez Strasbourg</a></li>
+    <li><a href="colmar.html">Visitez Colmar</a></li>
+    <li><a href="eguisheim.html">Visitez Eguisheim</a></li>
+  </ul>
+</nav>
       <!--<section>
 
       <table class="table">
