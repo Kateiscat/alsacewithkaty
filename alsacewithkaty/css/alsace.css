@@ -117,9 +117,10 @@ a:hover {
     background-color: rgb(247, 235, 243); 
 }
 .accuiel{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
     align-content: space-between;
 }
 .fin{
