@@ -1,4 +1,4 @@
-body{
+html, body{
     height: 100%;
 }
 header{
@@ -7,30 +7,51 @@ header{
 p {
     color: blue;
 }
-/*me*/
-h1 {color: rebeccapurple;
+h1,h2 {color: rebeccapurple;
 font-family: "Dancing Script",cursive;text-align: center;
 background-color: white;
    }
 h2 {
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-    background-color: rgb(247, 235, 243); 
+    background-color: rgb(238, 220, 234); 
 
 }
 h4{
-    font-family: 'Times New Roman', Times, serif,cursive; text-align: start; color: rebeccapurple;
+    font-family: 'Times New Roman', Times, serif,cursive; color: rebeccapurple;
     text-align: center;
 
 }
-.maintext{
-    color: rgb(106, 35, 168)
+
+.storyimg {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-bottom: 10px;
 }
-.mainstory {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 2%;
-    margin-bottom: 2%;
+.storyimg img {
+border: 3px solid white;
+}
+
+.story{
+    width: 600px;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+.maintext{
+    color: rgb(15, 3, 25);
+    text-align: left;
+}
+ .mainstory {
+  display: flex;            
+  flex-wrap: wrap;          
+  justify-content: center;   
+  gap: 3%;                
+}
+.mainstory > * {
+  flex: 0 0 calc(50% - 2%);
+  box-sizing: border-box;    
 }
 .alsacepng{
    animation: swing 2s infinite ease-in-out;
@@ -67,7 +88,7 @@ h4{
 }
 .button:hover {
   transform: scale(1.15);
-  background-color: #f080c0; /* Изменённый цвет фона */
+  background-color: #f080c0;
   color: white;}
 a {
   color: black;
@@ -75,16 +96,10 @@ a {
 }
 
 a:hover {
-  color: white; /* Цвет при наведении */
+  color: white;
 }
-.accuiel{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.box{
-    align-content: center;
-    justify-content: center;
-    background-color: white;
+.box {
+  background-color: white;
     padding: 1%;
 }
 .box1{
@@ -101,12 +116,11 @@ a:hover {
     padding: 1%;
     background-color: rgb(247, 235, 243); 
 }
-.accueil{
+.accuiel{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: space-between;
-    
 }
 .fin{
     color: black;
@@ -120,37 +134,20 @@ a:hover {
     display:  flex;
     justify-content: center;
     align-content: center;
+    background-color: white;
 }
 
 .bon{
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
 }
-.story{
-    width: 600 px;
-    background-color: white;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 1rem;
-    padding: 2%;
-}
-.storyimg{
-    background-color: white;
-    padding: 1%;
-     align-content: center; align-items: center;
 
-}
-.findepage{
-
-    background-color: white;
-}
 .main-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* светлый полупрозрачный фон */
+  background-color: rgba(255, 255, 255, 0.9); 
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 .main-nav ul {
   list-style: none;
@@ -158,7 +155,7 @@ a:hover {
   gap: 20px;
   justify-content: center;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8); /* полупрозрачный фон */
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
 
@@ -172,5 +169,5 @@ a:hover {
 }
 
 .main-nav a:hover {
-  color: rebeccapurple; /* красивый красный оттенок */
+  color: rebeccapurple; 
 }
