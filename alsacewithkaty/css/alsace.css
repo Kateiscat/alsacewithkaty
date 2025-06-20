@@ -1,179 +1,118 @@
-html, body{
+<html lang = "fr">
+   <!DOCTYPE html>
+  <head>
+       <meta charset ="utf-8">
+       <meta name="Decouvrez Alsace avec Katy" content="Partez à la découvrte de l'Alsace avec Katy - Strasbourg, Colmar, Eguisheim">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="../css/alsace.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+       <title>
+        Découvrez Alsace avec Katy
+       </title>
+       <style>
+       html {
     height: 100%;
-}
-header{
-    padding-top: 30px;
-}
-p {
-    color: blue;
-}
-h1,h2 {color: rebeccapurple;
-font-family: "Dancing Script",cursive;text-align: center;
-background-color: white;
-   }
-h2 {
-    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-    background-color: rgb(238, 220, 234); 
+  }
 
-}
-h4{
-    font-family: 'Times New Roman', Times, serif,cursive; color: rebeccapurple;
-    text-align: center;
+  body {
+    background-image: url("img/colmar1.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    scrollbar-width: auto;
+    scrollbar-color: #888 #f1f1f1;
+  }
 
-}
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
 
-.storyimg {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  padding-bottom: 10px;
-}
-.storyimg img {
-border: 3px solid white;
-}
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
 
-.story{
-    width: auto;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 2%;
-    margin-bottom: 3%;
-}
-.maintext{
-    color: rgb(15, 3, 25);
-    text-align: left;
-}
- .mainstory {
-  display: flex;            
-  flex-wrap: wrap;          
-  justify-content: center;   
-  gap: 3%;                
-}
-.mainstory > * {
-  flex: 0 0 calc(50% - 2%);
-  box-sizing: border-box;    
-}
-.alsacepng{
-   animation: swing 2s infinite ease-in-out;
-   transform-origin: center center;
-   display: inline-block;
-}
-@keyframes swing{
-    0%   { transform: rotate(0deg); }
-  25%  { transform: rotate(10deg); }
-  50%  { transform: rotate(0deg); }
-  75%  { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg); }
+  body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+  }
 
-}
-.conteneur{
-    display: flex; 
-    flex-direction: row;
-    justify-content:  space-around;
-    justify-items: center;
-   gap: 5px;
-}
-.button {
-  align-self: center;
-  height: 1rem;
-  width: 8rem;
-  background: rgb(249, 188, 239);
-  color: black;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 1.85rem 3rem;
-  border-radius: 10rem;
-  transition: transform 1s, background-color 0.5s, color 0.5s;
-}
-.button:hover {
-  transform: scale(1.15);
-  background-color: #f080c0;
-  color: white;}
-a {
-  color: black;
-  text-decoration: none;
-}
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+   </style>
+  </head>
 
-a:hover {
-  color: white;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-    padding: 1%;
-}
-.box img {
-border: 3px solid white;
-}
-.box1{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    align-content: center;
-    justify-content: center;
-    border-radius: 1rem;
-}
-.bienvenue{
-    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-    margin-bottom: 5%;
-    padding: 1%;
-    background-color: rgb(247, 235, 243); 
-}
-.accuiel{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    gap: 5px;
-    justify-content: space-around;
-    align-content: space-around;
-}
-.fin{
-    color: black;
-    margin-top: 5%;
-    background-color: rgb(247, 235, 243); 
-    padding: 1%;
-}
+   <header>
+     <h1>  Découvrez Alsace avec Katy <img src="./img/alsace.png" class="alsacepng" alt="alsace" height="35" width="35"> </h1>
+  </header>
+<main>
+   <body>
+      <nav class="main-nav">
+  <ul>
+   <li><a href="index.html">Accueil</a></li>
+   <li><a href="strasbourg.html">Visitez Strasbourg</a></li>
+    <li><a href="colmar.html">Visitez Colmar</a></li>
+    <li><a href="eguisheim.html">Visitez Eguisheim</a></li>
+  </ul>
+</nav>
+      <!--<section>
 
-.findepage{
-    color: black;
-    display:  flex;
-    justify-content: center;
-    align-content: center;
-    background-color: white;
-}
-
-.bon{
-    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-}
-
-.main-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9); 
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-family: 'Dancing Script', cursive;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-  color: rebeccapurple; 
-}
+      <table class="table">
+        <tr>
+           <td> <img src = "https://i.imgur.com/H8y3qvW.jpeg" width="300" height="300" alt="Photo de Strasbourg"> </td>
+           <td> <img src = "https://i.imgur.com/H8y3qvW.jpeg" width="300" height="300" alt="Photo de Colmar"> </td>
+           <td> <img src = "https://i.imgur.com/H8y3qvW.jpeg" width="300" height="300" alt="Photo de Eguisheim"> </td>
+        </tr>
+        <tr> 
+            <td> <h3 class="grand-text"> <strong>Strasbourg</strong></h3> </td>
+            <td> <h3 class="grand-text"> <strong>Colmar</strong></h3> </td>
+            <td> <h3 class="grand-text"> <strong>Eguisheim</strong></h3> </td>
+         </tr>
+        <tr> 
+            <td>  <h4>C'est la capitale de l'Alsace et capitale Européenne </h4>  </td>
+            <td>  <h4>C’est une petite ville où vous allez plonger dans l’histoire de Noël</h4> </td>
+            <td> <h4>C'est l'une des plus belles villes d'Alsace </h4></td>
+        </tr>
+         <tr>
+             <td> <a href="strasbourg.html" > Visitez Strasbourg </a></td>
+             <td> <a href="colmar.html" > Visitez Colmar </a></td>
+             <td> <a href="eguisheim.html" > Visitez Eguisheim </a></td>
+        </tr>
+     </table>
+     </section>-->
+    <section>
+      <h2>
+             Bienvenue, chers amis ! <br>
+            Aujourd'hui, nous embarquons pour un merveilleux voyage à la découverte de la magnifique région d'Alsace.
+       </h2>
+      <div class="conteneur">
+      <div class="box">
+         <img src = "./img/strasbourg_accueil.webp" width="320" height="320"  alt="Photo de Strasbourg"> <br>
+          <div class="box1">  <h4>La capitale de l'Alsace </h4>  </div> <br>
+          <div class="button"> <a href="strasbourg.html" target="_blank"> Visitez Strasbourg </a> </div>
+      </div>
+      <div class="box">
+         <img src = "./img/colmar_accueil.webp"  width="320" height="320" alt="Photo de Colmar"> <br>
+         <div class="box1"> <h4>La ville où règne l'eesprit de Noël</h4> </div> <br>
+         <div class="button"> <a href="colmar.html" target="_blank"> Visitez Colmar </a> </div>
+      </div>
+      <div class="box">
+         <img src = "./img/eguisheim8.webp" width="320" height="320" alt="Photo de Eguisheim"> <br>
+         <div class="box1"> <h4>La ville où le conte de fées prend vie</h4></div> <br>
+         <div class="button"> <a href="eguisheim.html" target="_blank"> Visitez Eguisheim </a> </div>
+       </div>
+    </section>
+</main>
+<footer>
+   <p class="fin"> 2025 Katy <br>
+      Plus de photos sont disponible sur <a href="https://www.instagram.com/kateiscatphotographer?igsh=OHIxNmp1ZzMyd2M1" target="_blank">Instagram</a>
+                    <svg width ="18px" class="icon instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>Instagram</svg>
+     </p>
+</footer>
+ </body>
+</html>
