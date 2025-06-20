@@ -67,12 +67,11 @@ border: 3px solid white;
 
 }
 .conteneur{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto auto;
-    justify-content:  space-between;
+    display: flex; 
+    flex-direction: row;
+    justify-content:  space-around;
     justify-items: center;
-   gap: 10px;
+   gap: 5px;
 }
 .button {
   align-self: center;
@@ -99,8 +98,13 @@ a:hover {
   color: white;
 }
 .box {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     padding: 1%;
+}
+.box img {
+border: 3px solid white;
 }
 .box1{
     width: 100%;
@@ -120,6 +124,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
+    gap: 5px;
     justify-content: space-around;
     align-content: space-around;
 }
