@@ -4,17 +4,16 @@ html, body{
 header{
     padding-top: 30px;
 }
-p {
-    color: blue;
+h1, h2 {
+  color: rebeccapurple;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
 }
-h1,h2 {color: rebeccapurple;
-font-family: "Dancing Script",cursive;text-align: center;
-background-color: white;
-   }
+h1 {
+  background-color: white;
+}
 h2 {
-    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
-    background-color: rgb(238, 220, 234); 
-
+  background-color: rgb(238, 220, 234);
 }
 h4{
     font-family: 'Times New Roman', Times, serif,cursive; color: rebeccapurple;
@@ -70,7 +69,7 @@ border: 3px solid white;
     display: flex; 
     flex-direction: row;
     justify-content:  space-around;
-    justify-items: center;
+    align-items: center;
    gap: 5px;
 }
 .button {
@@ -82,7 +81,7 @@ border: 3px solid white;
   font-size: 1rem;
   cursor: pointer;
   padding: 1.85rem 3rem;
-  border-radius: 10rem;
+  border-radius: 3rem;
   transition: transform 1s, background-color 0.5s, color 0.5s;
 }
 .button:hover {
@@ -107,11 +106,10 @@ a:hover {
 border: 3px solid white;
 }
 .box1{
-    width: 100%;
-    height: 100%;
+  display: flex;
     background-color: white;
     align-content: center;
-    justify-content: center;
+    justify-content:center;
     border-radius: 1rem;
 }
 .bienvenue{
@@ -142,7 +140,6 @@ border: 3px solid white;
     align-content: center;
     background-color: rgb(245, 186, 229);
 }
-
 .bon{
     font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
 }
