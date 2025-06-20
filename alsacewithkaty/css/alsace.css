@@ -140,7 +140,7 @@ border: 3px solid white;
     display:  flex;
     justify-content: center;
     align-content: center;
-    background-color: white;
+    background-color: rgb(245, 186, 229);
 }
 
 .bon{
