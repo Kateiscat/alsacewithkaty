@@ -33,7 +33,7 @@ border: 3px solid white;
 }
 
 .story{
-    width: 600px;
+    width: auto;
     background-color: white;
     border-radius: 1rem;
     padding: 2%;
