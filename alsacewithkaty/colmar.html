@@ -1,230 +1,176 @@
-<html lang = "fr">
- <head>
-  <meta charset ="utf-8">
-       <meta name="Decouvrez Colmar avec Katy" content="Partez à la découvrte de l'Alsace avec Katy - Strasbourg, Colmar, Eguisheim">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link href="../css/alsace.css" rel="stylesheet">
-       <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-       <title>
-        Découvrez Alsace avec Katy
-       </title>
-   <style>
-  html {
+html, body{
     height: 100%;
-  }
-  body {
-    background-image: url("img/colmar1.webp");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+header{
+    padding-top: 30px;
+}
+h1, h2 {
+  color: rebeccapurple;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+h1 {
+  background-color: white;
+}
+h2 {
+  background-color: rgb(238, 220, 234);
+}
+h4{
+    font-family: 'Times New Roman', Times, serif,cursive; color: rebeccapurple;
+    text-align: center;
 
-    scrollbar-width: auto;
-    scrollbar-color: #f80505 #cd7171;
-  }
-  body::-webkit-scrollbar {
-    width: 10px;
-  }
+}
 
-  body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
+.storyimg {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-bottom: 10px;
+}
+.storyimg img {
+border: 3px solid white;
+}
 
-  body::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 3px solid #f1f1f1;
-  }
+.story{
+    width: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+.maintext{
+    color: rgb(15, 3, 25);
+    text-align: left;
+}
+ .mainstory {
+  display: flex;            
+  flex-wrap: wrap;          
+  justify-content: center;   
+  gap: 3%;                
+}
+.mainstory > * {
+  flex: 0 0 calc(50% - 2%);
+  box-sizing: border-box;    
+}
+.alsacepng{
+   animation: swing 2s infinite ease-in-out;
+   transform-origin: center center;
+   display: inline-block;
+}
+@keyframes swing{
+    0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
 
-  body::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-</style>
-<!-- для різних браузерів-->
+}
+.conteneur{
+    display: flex; 
+    flex-direction: row;
+    justify-content:  space-around;
+    align-items: center;
+   gap: 5px;
+}
+.button {
+  align-self: center;
+  height: 1rem;
+  width: 8rem;
+  background: rgb(249, 188, 239);
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 3rem;
+  transition: transform 1s, background-color 0.5s, color 0.5s;
+}
+.button:hover {
+  transform: scale(1.15);
+  background-color: #f080c0;
+  color: white;}
+a {
+  color: black;
+  text-decoration: none;
+}
 
- </head>
- <body>
-  <nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="strasbourg.html">Visitez Strasbourg</a></li>
-    <li><a href="colmar.html">Visitez Colmar</a></li>
-    <li><a href="eguisheim.html">Visitez Eguisheim</a></li>
-  </ul>
-</nav>
-<header>
-     <h1>  Découvrez Alsace avec Katy <img src="./img/alsace.png" class="alsacepng" alt="alsace" height="35" width="35"> </h1> 
-     <h2>
-         Coucou ! Bienvenue à Colmar <br> La ville où le conte de fées prend vie
-         </h2>
-  </header>
-   <main>
-     <section>
-      <div class="mainstory"> 
+a:hover {
+  color: white;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    padding: 1%;
+}
+.box img {
+border: 3px solid white;
+}
+.box1{
+  display: flex;
+    background-color: white;
+    align-content: center;
+    justify-content:center;
+    border-radius: 1rem;
+}
+.bienvenue{
+    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
+    margin-bottom: 5%;
+    padding: 1%;
+    background-color: rgb(247, 235, 243); 
+}
+.accuiel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 5px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.fin{
+    color: black;
+    margin-top: 5%;
+    background-color: rgb(247, 235, 243); 
+    padding: 1%;
+}
 
-             <div class="story">
-              <p class="maintext">
-              Colmar vous entraînera dans un voyage vivant et inoubliable à travers la Renaissance et le début du Baroque.</p>
-              <p class="maintext">La ville a conservé son centre historique avec ses maisons à colombages et ses ruelles pavées. </p>
-              <p class="maintext">Les charmants balcons en bois ornés de fleurs fraîches séduisent les visiteurs du monde entier.</p>
-             </div>
-             <div class="storyimg"> 
-             <img src = "./img/colmar6.webp" width= "300" height="300" alt="Colmar">
-             </div>
-               <div class="storyimg"> 
-             <img src = "./img/colmar3.webp" width= "300" height="300" alt="Colmar">
-              </div>
-             <div class="story">
-              <p class="maintext">
-                 L’architecture de Colmar a inspiré le célèbre réalisateur japonais Hayao Miyazaki. </p>
-                 <p class="maintext">Dans son film "Le Château ambulant" (2004), on peut reconnaître :</p>
-                <p class="maintext">La Maison Pfister (Maison Pfister), La Maison des Têtes (Maison des Têtes), et les vues typiques des rues de Colmar.</p>
-            </div>
-      </div>
-    </section>
-    <section>
-      <div class="mainstory"> 
-               <div class="story">
-                <p class="maintext">
-               La rue la plus emblématique est la Rue des Marchands, où se trouve la Maison Pfister. </p>
-               <p class="maintext">C’est l’un des symboles de la ville, souvent représenté sur les cartes postales et les magnets. </p>
-               <p class="maintext">Sa façade est ornée de fresques remarquables et d’un oriel ancien, témoignant du savoir-faire des maîtres d’autrefois.</p>
-               </div>
-               <div class="storyimg"> 
-                    <img src = "./img/colmar12.webp" width= "300" height="300" alt="Colmar">
-                </div>
-                  <div class="storyimg"> 
-                    <img src = "./img/colmar4.webp" width= "300" height="300" alt="Colmar">
-                 </div>
-                <div class="story">
-                  <p class="maintext">
-                       Sur cette même rue, vous trouverez le musée dédié à Frédéric Auguste Bartholdi, célèbre sculpteur de la Statue de la Liberté à New York.</p>
-                      <p class="maintext">Le musée retrace l’histoire de cette statue — de l’idée à sa réalisation.</p>
-                   <p class="maintext">Vous pourrez également y découvrir d’autres œuvres de l’artiste, ses voyages, et son atelier.</p>
-                    <p class="maintext">Le musée est situé dans la maison où il est né et a grandi.</p>
-              </div>
-              </div>
-              </section>
-              <section>
-               <div class="mainstory"> 
-                  <div class="story">
-                    <p class="maintext">
-                        Le conseil de Katy:<br>
-                        À Colmar, vous trouverez une grande variété de glaces délicieuses — parfaites pour accompagner votre promenade!<br>
-                        Dans les boutiques de souvenirs, on peut acheter une cigogne parlante — un souvenir amusant de votre voyage.</p>
-                   </div>
-                   <div class="storyimg"> 
-                       <img src = "./img/colmar15.webp"  width= "300" height="300" alt="Colmar">
-                  </div>
-                  <div class="storyimg"> 
-                  <img src = "./img/colmar18.webp"  width= "300" height="300" alt="Colmar">
-                  </div>
+.findpage{
+    color: black;
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(245, 186, 229);
+}
+.bon{
+    font-family: "Dancing Script",cursive;text-align: center; color: rebeccapurple;
+}
 
-                   <div class="story"> <p class="maintext"> En vous promenant dans la vieille ville, vous découvrirez le quartier historique de la Petite Venise, considéré comme l’endroit le plus romantique de Colmar. </p>
-                    <img src="./img/stork.png" class="stork" alt="stork" height="100" width="100">
-                    <p class="maintext"> On l’appelle la perle de la ville.</p>
-                   </div> 
-     
-               </div>
-              </section>
-     <section>
-       <div class="mainstory"> 
-                  <div class="story">
-                    <p class="maintext">
-                  Dans ses ruelles étroites bordant le canal, se trouvent de nombreux cafés, restaurants, confiseries artisanales et échoppes d’artisans.</p>
-                  <p class="maintext"> Tout cela garde l’esprit de l’ancien Alsace.</p>
-                  <p class="maintext"> De nombreuses maisons sont décorées de cœurs et du symbole de la région — la cigogne — ce qui ne manquera pas de vous faire tomber amoureux de cette ville magnifique !</p>
-                 </div>
-                <div class="storyimg"> 
-                 <img src = "./img/colmar17.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-                <div class="storyimg"> 
-                 <img src = "./img/colmar19.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-                <div class="story">
-                  <p class="maintext"> 
-                  Les façades à colombages, ornées de fleurs colorées, se reflètent dans les eaux calmes du canal, où circulent des barques. </p>
-                  <p class="maintext"> Cela donne au quartier une ambiance particulière, presque féerique — comme si vous étiez à Venise. </p>
-                </div>
-                </div>
-                </section>
-      <section>
-      <div class="mainstory">
-                <div class="story">
-                  <p class="maintext"> 
-                  Pour une belle photo souvenir, rendez-vous au pont <em>Pont de la Rue Turenne.</em></p>
-                 <p class="maintext">  Vous aurez aussi l’occasion de visiter le célèbre Marché Couvert. </p>
-                 <p class="maintext"> Depuis le marché, vous pouvez accéder à une terrasse d’été au-dessus du canal, idéale pour admirer les charmes de la Petite Venise.</p>
-                </div>
-                <div class="storyimg"> 
-                 <img src = "./img/colmar16.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-      </div>
-     </section> 
-     <section>
-      <div class="mainstory">
-                <div class="storyimg"> 
-                 <img src = "./img/colmar10.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-                <div class="story">
-                  <p class="maintext"> 
-                  Au cœur de Colmar — la Place de l’Ancienne Douane</p>
-                  <p class="maintext"> Dirigeons-nous maintenant vers le centre de Colmar — la Place de l’Ancienne Douane, où se trouve l’un des bâtiments les plus importants : le Koïfhus, l’ancienne douane.</p>
-                 <p class="maintext">  Ce bâtiment a été construit en 1480 et accueille aujourd’hui des expositions artistiques.</p>
-                </div>
-                <div class="story">
-                  <p class="maintext"> 
-                  Le vin — un élément clé de l’histoire! </p>
-                  <p class="maintext"> Colmar se trouve au cœur de la Route des Vins d’Alsace, et cela se ressent à chaque coin de rue. </p>
-                  <p class="maintext"> Le vin fait partie intégrante de la culture : riesling, pinot gris, muscat, gewurztraminer — des noms qui chantent à l’oreille ! </p>
-                  <p class="maintext"> Dans la vieille ville, de nombreuses caves proposent des dégustations et la possibilité d’acheter une bouteille ou deux à emporter. </p>
-                </div>
-                <div class="storyimg"> 
-                 <img src = "./img/colmar13.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-      </div>
-     </section>
-     <section>
-      <div class="mainstory">
-        <div class="storyimg"> 
-                 <img src = "./img/colmar11.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-                <div class="story">
-                  <p class="maintext"> 
-                  Colmar — l’incarnation de l’esprit de Noël!</p>
-                  <p class="maintext"> Tout au long de l’année, des boutiques proposent de magnifiques décorations et objets de Noël. </p>
-                  <p class="maintext"> Mais c’est à l’approche des fêtes que la magie opère vraiment. </p>
-                  <p class="maintext"> La ville entière s’illumine ! Guirlandes, bougies, lanternes — chaque recoin brille de mille feux.</p>
-                </div>
-        <div class="story">
-                  <p class="maintext"> Les habitants et la mairie décorent la ville avec soin et amour. </p>
-                  <p class="maintext"> Un parcours de Noël est mis en place, avec six marchés festifs.</p>
-                 <p class="maintext">  On y trouve des spécialités locales, du délicieux vin chaud, et une ambiance chaleureuse.</p>
-                  <p class="maintext"> Sur les places et dans les églises, des chœurs de Noël chantent. Dans les rues, vous croiserez des Pères Noël et des anges. </p>
-                   <p class="maintext"> Grâce à cette atmosphère féerique, des visiteurs du monde entier viennent à Colmar pour vivre la magie de Noël. </p>
-                  <p class="maintext"> Colmar vous attend ! </p>
-                </div>
-                <div class="storyimg"> 
-                 <img src = "./img/colmar8.webp"  width= "300" height="300" alt="Colmar">
-                </div>
-      </div>
-     </section>
-   </main>
-   <footer> 
-    <div class="accuiel">
-             <div class="button"> <a href="index.html" target="_blank" > Accueil </a> </div>
-             <div class="button"> <a href="strasbourg.html" target="_blank" > Visitez Strasbourg </a> </div>
-             <div class="button"> <a href="eguisheim.html" target="_blank" > Visitez Eguisheim </a> </div>
-      </div>
-     </section> 
-   <p class="fin"> 2025 Katy <br>
-      Plus de photos sont disponible sur <a href="https://www.instagram.com/kateiscatphotographer?igsh=OHIxNmp1ZzMyd2M1" target="_blank">Instagram</a>
-                    <svg width ="18px" class="icon instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>Instagram</svg>
-     </p>
-     <div class="findpage"><a href="#">Haut de page</a> </div> 
-   </footer>
-</body>    
-</html>
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: rebeccapurple; 
+}
